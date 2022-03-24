@@ -28,5 +28,12 @@ public class FizzBuzz
     {
         return number % 3 == 0 && number % 5 == 0;
     }
+
+    public string PrintFizBuzz(int from_number, int to_number)
+    {
+
+        return "";
+    }
+
 }
 
