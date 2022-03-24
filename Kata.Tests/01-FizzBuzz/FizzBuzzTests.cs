@@ -7,7 +7,8 @@ public class FizzBuzzTests
     [InlineData(2, "2")]
     [InlineData(3, "Fizz")]
     [InlineData(6, "Fizz")]
-
+    //
+    [InlineData(5, "Buzz")]
 
     public void TestGetFizzBuzz(int input, string expected)
     {
