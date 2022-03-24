@@ -6,6 +6,8 @@ public class FizzBuzz
     {
         if (IsFizz(number))
             return "Fizz";
+        else if (number == 5)
+            return "Buzz";
         else
             return number.ToString();
     }
