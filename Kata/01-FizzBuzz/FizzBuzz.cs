@@ -31,8 +31,15 @@ public class FizzBuzz
 
     public string PrintFizBuzz(int from_number, int to_number)
     {
-
-        return "";
+        string print_message = "";
+        ; for (int i = from_number; i < to_number + 1; i++)
+        {
+            if (i == to_number)
+                print_message += SayFizzBuzz(i);
+            else
+                print_message += SayFizzBuzz(i) + " ";
+        }
+        return print_message;
     }
 
 }
