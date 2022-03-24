@@ -4,7 +4,10 @@ public class FizzBuzz
 {
     public string SayFizzBuzz(int number)
     {
-        return number.ToString();
+        if (number == 3)
+            return "Fizz";
+        else
+            return number.ToString();
     }
 }
 
