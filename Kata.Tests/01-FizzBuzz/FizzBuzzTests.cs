@@ -41,6 +41,7 @@ public class FizzBuzzTests
 
     [Theory]
     [InlineData(0)]
+    [InlineData(101)]
     private void CanShowArgumentException(int input)
     {
         //Arrange
