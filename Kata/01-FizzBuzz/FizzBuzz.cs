@@ -4,7 +4,7 @@ public class FizzBuzz
 {
     public string SayFizzBuzz(int number)
     {
-        if (number % 3 == 0 && number % 5 == 0)
+        if (IsFizzBuzz(number))
             return "FizzBuzz";
         if (IsFizz(number))
             return "Fizz";
@@ -22,6 +22,11 @@ public class FizzBuzz
     private bool IsBuzz(int number)
     {
         return number % 5 == 0;
+    }
+
+    private bool IsFizzBuzz(int number)
+    {
+        return number % 3 == 0 && number % 5 == 0;
     }
 }
 
