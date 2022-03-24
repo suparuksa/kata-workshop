@@ -2,7 +2,7 @@ namespace Kata.FizzBuzz;
 
 public class FizzBuzz
 {
-    public string SayFizzBuzz()
+    public string SayFizzBuzz(int number)
     {
         return "";
     }

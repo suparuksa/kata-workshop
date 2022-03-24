@@ -3,14 +3,14 @@ namespace Kata.FizzBuzz.Tests;
 public class FizzBuzzTests
 {
     [Fact]
-    public void SayHelloWorld_ShouldReturnHelloWorld()
+    public void TestGetFizzBuzz()
     {
         // Arrange
         var sut = new FizzBuzz();
         // Act
-        var actual = sut.SayFizzBuzz();
+        var actual = sut.SayFizzBuzz(1);
         // Assert
-        actual.Should().Be("");
+        actual.Should().Be("1");
     }
 }
 
