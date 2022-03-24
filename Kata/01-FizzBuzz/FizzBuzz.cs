@@ -1,9 +1,13 @@
 namespace Kata.FizzBuzz;
 
+using System;
+
 public class FizzBuzz
 {
     public string SayFizzBuzz(int number)
     {
+        NumberIsNotInRule(number);
+
         if (IsFizzBuzz(number))
             return "FizzBuzz";
         if (IsFizz(number))
@@ -32,7 +36,7 @@ public class FizzBuzz
     public string PrintFizBuzz(int from_number, int to_number)
     {
         string print_message = "";
-        ; for (int i = from_number; i < to_number + 1; i++)
+        for (int i = from_number; i < to_number + 1; i++)
         {
             if (i == to_number)
                 print_message += SayFizzBuzz(i);
@@ -42,5 +46,14 @@ public class FizzBuzz
         return print_message;
     }
 
+    private void NumberIsNotInRule(int number)
+    {
+        if (number < 1 || number > 100)
+        {
+            throw new ArgumentException(
+                number.ToString() + "is not valid number"
+            );
+        }
+    }
 }
 
