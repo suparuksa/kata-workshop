@@ -4,7 +4,7 @@ public class FizzBuzz
 {
     public string SayFizzBuzz(int number)
     {
-        return "1";
+        return number.ToString();
     }
 }
 
