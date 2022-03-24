@@ -6,7 +6,7 @@ public class FizzBuzz
     {
         if (IsFizz(number))
             return "Fizz";
-        else if (number % 5 == 0)
+        else if (IsBuzz(number))
             return "Buzz";
         else
             return number.ToString();
@@ -15,6 +15,11 @@ public class FizzBuzz
     private bool IsFizz(int number)
     {
         return number % 3 == 0;
+    }
+
+    private bool IsBuzz(int number)
+    {
+        return number % 5 == 0;
     }
 }
 
